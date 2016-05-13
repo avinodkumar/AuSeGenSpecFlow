@@ -50,17 +50,21 @@
     <Folder Include="PageClasses\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\FrameworkComponents\AuScGen.CommonUtilityPlugin\AuScGen.CommonUtilityPlugin.csproj">
+    <ProjectReference Include="..\AuScGen.CommonUtilityPlugin\AuScGen.CommonUtilityPlugin.csproj">
       <Project>{a0e95393-2bc8-465e-b42a-9cc0d179ecb0}</Project>
       <Name>AuScGen.CommonUtilityPlugin</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\FrameworkComponents\DataAccess\DataAccess.csproj">
-      <Project>{2f53d1f7-77af-4b8a-a57a-84c6551a93d0}</Project>
-      <Name>DataAccess</Name>
+    <ProjectReference Include="..\Framework\Framework.csproj">
+      <Project>{47701933-298c-4aee-b380-23add856f498}</Project>
+      <Name>Framework</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\FrameworkComponents\UIAccess\UIAccess.csproj">
+    <ProjectReference Include="..\UIAccess\UIAccess.csproj">
       <Project>{cb9c9574-d09a-4bce-b50e-c3a662bc0ec9}</Project>
       <Name>UIAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebDriverWrapper\WebDriverWrapper.csproj">
+      <Project>{27e98eaa-4aaf-4911-842b-688b21a76f14}</Project>
+      <Name>WebDriverWrapper</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
