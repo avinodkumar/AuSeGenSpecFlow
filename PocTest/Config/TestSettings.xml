@@ -7,19 +7,10 @@
     <BinaryPath>D:\backup\Mydata\Portables\FirefoxWithSeleniumIDE\FirefoxWithSeleniumIDE\FirefoxPortable\FirefoxPortable\FirefoxPortable.exe</BinaryPath>
   </TestSetting>-->
   <TestSetting>
-    <Url>http://www.edmc.edu/</Url>    
+    <Url>https://in.linkedin.com/</Url>    
   </TestSetting>
   <TestSetting>
     <AUDigitalUrl>https://test.apply.argosy.edu/</AUDigitalUrl>
-  </TestSetting>
-  <TestSetting>
-    <AIDigitalUrl>https://test.apply2.artinstitutes.edu/</AIDigitalUrl>
-  </TestSetting>
-  <TestSetting>
-    <BMCDigitalUrl>https://test.apply.brownmackie.edu/</BMCDigitalUrl>
-  </TestSetting>
-  <TestSetting>
-    <SUDigitalUrl>https://test.apply.southuniversity.edu/</SUDigitalUrl>
   </TestSetting>
   <TestSetting>
     <MaxTimeoutValue>80000</MaxTimeoutValue>	

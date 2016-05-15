@@ -1,0 +1,16 @@
+<ObjectRepository>
+<FeatureSet name='Cedexis Radar'>
+	<Element type='Image' name='ProfileImg'>
+		<xpath>//div[@id='account-nav']/ul/li[4]/a/img</xpath>
+		<PageTitle>Cedexis Radar</PageTitle>
+	</Element>
+	<Element type='Link' name='ProfileName'>
+		<xpath>//a[@class = 'act-set-name-split-link']</xpath>
+		<PageTitle>Cedexis Radar</PageTitle>
+	</Element>
+	<Element type='Link' name='SignoutBut'>
+		<xpath>//a[contains(text(),'Sign Out')]</xpath>
+		<PageTitle>Cedexis Radar</PageTitle>
+	</Element>
+</FeatureSet>
+</ObjectRepository>

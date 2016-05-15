@@ -1,0 +1,16 @@
+<ObjectRepository>
+<FeatureSet name='Worlds Largest Professional Network | LinkedIn'>
+	<Element type='Textbox' name='UserNameTxtBox'>
+		<id>login-email</id>
+		<PageTitle>Worlds Largest Professional Network | LinkedIn</PageTitle>
+	</Element>
+	<Element type='Textbox' name='PasswordTxtBox'>
+		<id>login-password</id>
+		<PageTitle>Worlds Largest Professional Network | LinkedIn</PageTitle>
+	</Element>
+	<Element type='Button' name='SignOnBut'>
+		<xpath>//input[@name='submit']</xpath>
+		<PageTitle>Worlds Largest Professional Network | LinkedIn</PageTitle>
+	</Element>
+</FeatureSet>
+</ObjectRepository>

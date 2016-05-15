@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SpecFlowPoc.PocPages.Config
 {
-    class PageClassSettings : BaseSetings
+    public class PageClassSettings : BaseSetings
     {
         private static PageClassSettings defaultInstance = new PageClassSettings();
         private static string settingsFilePath = Path.Combine(Directory.GetCurrentDirectory(), "Config");
