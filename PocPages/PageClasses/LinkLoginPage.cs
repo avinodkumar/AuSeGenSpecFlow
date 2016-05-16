@@ -28,6 +28,14 @@ namespace PocPages.PageClasses
             }
         }
 
+        public WebImage LinkedinImage
+        {
+            get
+            {
+                return GetHtmlControl<WebImage>("LinkedinImage");
+            }
+        }
+         
         public WebEditBox PasswordTxtBox
         {
             get

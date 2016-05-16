@@ -47,6 +47,11 @@ namespace WebDriverWrapper
             SeleniumActions.MoveToElement(WebElement, offSetX, offSetY).Build().Perform();
         }
 
+        public void MoveToElement()
+        {
+            SeleniumActions.MoveToElement(WebElement).Build().Perform();
+        }
+
         public void DragDrop(IControl target)
         {
             SeleniumActions.DragAndDrop(WebElement, ((SeleniumWebControls)target).aWebElement).Build().Perform();            

@@ -11,7 +11,7 @@ using AuScGen.TestExecutionUtil;
 using System.Drawing;
 using System.Windows.Forms;
 using AuScGen.CommonUtilityPlugin;
-
+using TechTalk.SpecFlow;
 
 namespace SpecFlowPoc.PocTest
 {
@@ -53,8 +53,9 @@ namespace SpecFlowPoc.PocTest
                 if (null == aWebDriver)
                 {
                     aWebDriver = CreatePlugin<WebDriverPlugin>();
+                    string path = string.Format(@"{0}\DownloadDirectory", Directory.GetCurrentDirectory());
                     aWebDriver.Browser = new WebDriverWrapper.Browser(Utils.BrowserUtil.GetBrowserTypeFromTestSettings
-                                                                      , Config.TestSettings.Default.BinaryPath); 
+                                                                      , Config.TestSettings.Default.BinaryPath,path); 
                 }
                 return aWebDriver;
             }
@@ -148,34 +149,22 @@ namespace SpecFlowPoc.PocTest
             }        
         }
         
-        
-        //private Pages.DialogManager dialogHandler;
-        //public Pages.DialogManager DialogHandler 
-        //{ 
-        //    get
-        //    {
-        //        if(null == dialogHandler)
-        //        {
-        //            dialogHandler = new Pages.DialogManager(Telerik);
-        //        }
-        //        return dialogHandler;
-        //    }
-        //}
+                
 
-        //private Page myPage;
-        //protected Page Page
-        //{
-        //    get
-        //    {
-        //        if (null == myPage)
-        //        {
-        //            myPage = new Page(this);
-        //        }
-        //        return myPage;
-        //    }
-        //}
+        private Page myPage;
+        protected Page Page
+        {
+            get
+            {
+                if (null == myPage)
+                {
+                    myPage = new Page(this);
+                }
+                return myPage;
+            }
+        }
 
-        
+
 
         //private SamplePage samplePage;
         //protected SamplePage SamplePage
@@ -266,7 +255,7 @@ namespace SpecFlowPoc.PocTest
             return new AutoITExtension(windowTitle);
         }
 
-        [TestFixtureSetUp]
+        [BeforeScenario]
         public virtual void TestFixtureSetupBase()
         {
             Runner.DoStepWithoutScreenShot(() => 
@@ -278,7 +267,7 @@ namespace SpecFlowPoc.PocTest
             
         }
 
-        [TestFixtureTearDown]
+        [AfterScenario]
         public virtual void TestFixtureTeardownBase()
         {
             Runner.DoStepWithoutScreenShot(() => 

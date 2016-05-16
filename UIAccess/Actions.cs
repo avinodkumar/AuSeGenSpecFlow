@@ -20,9 +20,12 @@ namespace UIAccess
 
         public void MoveToElement(WebControl webElement)
         {
-           
             thisControlAccess.Action.MoveToElement(webElement.Control);
-            
+        }
+
+        public void MoveToElement()
+        {
+            thisControlAccess.Action.MoveToElement();
         }
 
         public void MoveToElement(int offSetX, int offSetY)
