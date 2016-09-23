@@ -51,7 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NewTest.cs" />
     <Compile Include="Page.cs" />
     <Compile Include="Config\TestSettings.cs" />
     <Compile Include="PoCSpecFlowFeature.feature.cs">
